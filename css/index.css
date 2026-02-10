@@ -4893,6 +4893,32 @@ body[data-type='about'] #web_bg {
     display: none;
   }
   .author-content {
+    display: -webkit-box !important;
+    display: -moz-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: box !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    -webkit-flex-direction: column !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+    -webkit-box-align: stretch;
+    -moz-box-align: stretch;
+    -o-box-align: stretch;
+    -ms-flex-align: stretch;
+    -webkit-align-items: stretch !important;
+    align-items: stretch !important;
+    gap: 1rem !important;
+  }
+  .author-content-item {
+    width: 100% !important;
+    float: none !important;
+    margin: 0 !important;
+  }
+  .author-content {
     margin-top: 0;
   }
   .author-content-item {
