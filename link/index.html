@@ -5,7 +5,7 @@
   diytitle: {"enable":true,"leaveTitle":"w(ﾟДﾟ)w 不要走！再看看嘛！","backTitle":"♪(^∇^*)欢迎肥来！"},
   LA51: undefined,
   greetingBox: undefined,
-  twikooEnvId: '',
+  twikooEnvId: 'https://twikoo-delta-weld.vercel.app',
   commentBarrageConfig:undefined,
   music_page_default: "nav_music",
   root: '/',
@@ -340,7 +340,7 @@ queueMicrotask(() => {
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: '',
+      envId: 'https://twikoo-delta-weld.vercel.app',
       region: '',
       onCommentLoaded: () => {
         anzhiyu.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
@@ -357,7 +357,7 @@ queueMicrotask(() => {
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: '',
+      envId: 'https://twikoo-delta-weld.vercel.app',
       region: '',
       urls: [window.location.pathname],
       includeReply: false
@@ -399,7 +399,7 @@ queueMicrotask(() => {
   const getComment = () => {
     const runTwikoo = () => {
       twikoo.getRecentComments({
-        envId: '',
+        envId: 'https://twikoo-delta-weld.vercel.app',
         region: '',
         pageSize: 6,
         includeReply: true
